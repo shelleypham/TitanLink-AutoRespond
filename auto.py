@@ -159,6 +159,11 @@ def main():
 
         csu_email = re.compile("(\w+@csu\.fullerton\.edu)")
         csu_email = csu_email.search(str(message)).group()
+        
+        """
+        Replace this with your email list
+        """
+        
         email_list = "OSS at CSU Fullerton <csuf.oss@gmail.com>, Shelley Pham <phamshelley@csu.fullerton.edu>, " + csu_email
 
         email_subject = "[OSS] %s, Thank you for your interest!" % first_name
